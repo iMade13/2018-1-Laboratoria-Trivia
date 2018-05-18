@@ -3,15 +3,15 @@ function enviar() {
         document.getElementById('nameInput').value;
 }
 
-/*function respuestas() {
+function respuestas() {
     if {
         document.getElementById("right").innerHTML =
             document.getElementById("si").value +
-            "<p>Incorrecto,No han egresado hombres</p>";
+            "<p>Correcto, no han egresado hombres</p>";
     } else {
         document.getElementById("wrong").innerHTML =
             document.getElementById("no").value +
-            "<p>Correcto, No han egresado hombres</p>";
+            "<p>Incorrecto, No han egresado hombres</p>";
     }
 }
 
