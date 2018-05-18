@@ -1,41 +1,35 @@
-/*window.onload = function()*/
-{
-    function introducirNombre() {
-        var mensaje;
-        document.getElementById("name").innerText = name;
+function enviar() {
+    document.getElementById('nombre').innerHTML = 'Bienvenida ' +
+        document.getElementById('nameInput').value;
+}
 
-        var wantToPlay = prompt("¿quieres jugar? s/n");
-        if (wantToPlay.toLowerCase() == "s") {
-            var answer1;
-            if (answer1.toLowerCase() == "n") {
-                document.getElementById("rightAnswersText").innerHTML =
-                    document.getElementById("rightAnswersText").innerHTML +
-                    "<div class='answer'>" +
-                    "<p>No han egresado hombres</p>"
-                "</div>";
-            } else {
-                document.getElementById("wrongAnswersText").innerHTML =
-                    document.getElementById("wrongAnswersText").innerHTML +
-                    "<div class='answer'>" +
-                    "<p>No han egresado hombres</p>"
-                "</div>";
-            }
-
-            var answer2 = prompt("¿hay laboratoria en concepción? s/n");
-            if (answer2.toLowerCase() == "n") {
-                document.getElementById("rightAnswersText").innerHTML =
-                    document.getElementById("rightAnswersText").innerHTML +
-                    "<div class='answer'>" +
-                    "<p>No hay laboratoria en concepción</p>"
-                "</div>";
-            } else {
-                document.getElementById("wrongAnswersText").innerHTML =
-                    document.getElementById("wrongAnswersText").innerHTML +
-                    "<div class='answer'>" +
-                    "<p>No hay laboratoria en concepción</p>"
-                "</div>";
-            }
-        } else {
-            document.getElementById("warningMessage").innerText = "Bueno Chao";
-        }
+/*function respuestas() {
+    if {
+        document.getElementById("right").innerHTML =
+            document.getElementById("si").value +
+            "<p>Incorrecto,No han egresado hombres</p>";
+    } else {
+        document.getElementById("wrong").innerHTML =
+            document.getElementById("no").value +
+            "<p>Correcto, No han egresado hombres</p>";
     }
+}
+
+
+/* var answer2 = prompt("¿hay laboratoria en concepción? s/n");
+    if (answer2.toLowerCase() == "n") {
+        document.getElementById("rightAnswersText").innerHTML =
+            document.getElementById("rightAnswersText").innerHTML +
+            "<div class='answer'>" +
+            "<p>No hay laboratoria en concepción</p>"
+        "</div>";
+    } else {
+        document.getElementById("wrongAnswersText").innerHTML =
+            document.getElementById("wrongAnswersText").innerHTML +
+            "<div class='answer'>" +
+            "<p>No hay laboratoria en concepción</p>"
+        "</div>";
+    }
+} else {
+    document.getElementById("warningMessage").innerText = "Bueno Chao";
+}*/

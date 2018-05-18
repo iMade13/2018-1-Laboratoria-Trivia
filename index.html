@@ -9,11 +9,26 @@
 
 <body>
     <div id="upperBar">
+        <span id="nombre"></span><br/>
         <span id="nameLabel">Nombre : </span>
-        <span id="name"></span>
-        <input type="text" maxlength="30" value="Introduce tu Nombre" name="nombre">
+        <input type="text" maxlength="30" id='nameInput' value="Introduce tu Nombre">
+        <button onclick="enviar()">Enviar</button> <br/>
 
     </div>
+    <form action="" method="">
+        <div>
+            <label for="">¿Han egresado hombres a Laboratoria?</label> <br/>
+            <input type="radio" id="wrong" name='answersi' value="si">Si
+            <input type="radio" id="right" name='answerno' value="no">No
+        </div>
+        <!-- <div>
+            <label for="">¿Hay Labotaroia en Concepción?</label><br/>
+            <input type="radio" id="si2" name='answer2' value="si">Si
+            <input type="radio" id="no2" name='answer2' value="no">No <br/>
+        </div>-->
+        <button onclick="respuestas()">Testear</button>
+    </form>
+
     <div id="scoreBoard">
         <div id="rightAnswers">
             <h2>Respuestas correctas</h2>
@@ -28,14 +43,6 @@
             </div>
         </div>
     </div>
-    <form action="" method="POST">
-        <div>
-            <label for="">¿Han egresado hombres a Laboratoria?</label>
-            <input type="text" id="answer1">
-        </div>
-
-
-    </form>
 
     <div id="warningBlock">
         <p id="warningMessage"></p>
